@@ -1,0 +1,30 @@
+public class Phone {
+
+    public static void main (String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println ("Please enter a letter from A-Z.");
+        char x = input.next().charAt(0);
+        x = Character.toUpperCase(x);
+        int y = x;
+        System.out.println ("You entered the letter " + x);
+
+        if (y>=65 || y<=67)
+            System.out.println (x+"'s corrosponding digit is " + 2);
+        else if (y>=68 || y<=70)
+            System.out.println (x+"'s corrosponding digit is " + 3);
+        else if (y>=71 || y<=73)
+            System.out.println (x+"'s corrosponding digit is " + 4);
+        else if (y>=74 || y<=76)
+            System.out.println (x+"'s corrosponding digit is " + 5);
+        else if (y>=77 || y<=79)
+            System.out.println (x+"'s corrosponding digit is " + 6);
+        else if (y>=80 || y<=83)
+            System.out.println (x+"'s corrosponding digit is " + 7);
+        else if (y>=84 || y<=86)
+            System.out.println (x+"'s corrosponding digit is " + 8);
+        else if (y>=87 || y<=90)
+            System.out.println (x+"'s corrosponding digit is " + 9);
+        else System.err.println("invalid char " + x);           
+    }   
+}   
